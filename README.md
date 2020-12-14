@@ -1,5 +1,18 @@
 # Bey-Slay
 
+## Install JSON Server
+ - npm install -g json-server
+ 1. In root directory: create a `.json` file
+ 2. Create your JSON data
+ 3. Create a json-server.json file to change the port in root directory
+ 4. run `json-server --watch db.json``
+
+
+
+
+
+
+
 You are given an api.js file that exports an array of objects that look like this:
   > `{ "id": 1, "name": "All Day Slay", "img": "https://media.giphy.com/media/3o6gb7cN7bwDxAbnS8/giphy.gif", "favorite": false }`
 

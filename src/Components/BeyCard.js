@@ -1,9 +1,15 @@
 import React from "react";
 
-const BeyCard = () => {
+const BeyCard = (props) => {
+
+  //thunk 
+  function localClickHandler(props){
+    props.clickHandler(props.beyObj)
+  }
   return (
     <div className="card">
-
+     <h1>{props.beyObj.name}</h1>
+     <img alt="beyonce" src={props.beyObj.img} onClick={localClickHandler}/>
     </div>
   );
 };
