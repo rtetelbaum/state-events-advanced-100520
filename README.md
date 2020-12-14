@@ -30,8 +30,8 @@ You are given an api.js file that exports an array of objects that look like thi
 # Hint
 
 - The gif below will give you an idea of what the app should look like
-- Look up the `window.alert` function
+- Look up the window.alert() function
 
 ![beyonce gif](bey-slay.gif)
 
-CSS/Design: @cmccarthy15
+CSS/Design: @cmccarthy15# react-state-events-advanced-assessment
