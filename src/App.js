@@ -15,13 +15,15 @@ class App extends React.Component {
 			.then(data => this.setState({beyArray: data}))
 	}
 
-	handleFav = (beyObj) => {
-		const foundBeyObj = this.state.beyArray.find(bey => bey.id === beyObj.id)
+	handleFav = (favedBeyObj) => {
+		const newBeyArray = [...this.state.beyArray]
+		const foundBeyObj = newBeyArray.find(beyObj => beyObj.id === favedBeyObj.id)
 		if (foundBeyObj.favorite === false) {
-			// this.setState(prevState => ({foundBeyObj: {...prevState.foundBeyObj, favorite: true}}))
-			alert("Why isn't this working?")
+			foundBeyObj.favorite = true
+			this.setState({beyArray: newBeyArray})
 		} else if (foundBeyObj.favorite === true) {
-			// set state false
+			foundBeyObj.favorite = false
+			this.setState({beyArray: newBeyArray})
 			alert("I got a hot sauce in my bag, swag")
 		}
 	}
